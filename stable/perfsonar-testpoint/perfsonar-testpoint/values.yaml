@@ -9,3 +9,5 @@ Instance: ''
 # which has the `perfsonar: enabled` label applied to it. 
 # Otherwise, it will allow itself to be scheduled on any node. 
 nodeSelection: false
+
+psconfigHost: "some.host.name"
