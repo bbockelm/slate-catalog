@@ -10,4 +10,4 @@ Instance: ''
 # Otherwise, it will allow itself to be scheduled on any node. 
 nodeSelection: false
 
-psconfigHost: null
+psconfigURL: "http://some.example.edu/pwa/path/to/psconfig"
