@@ -29,9 +29,9 @@ spec:
       hostNetwork: true
       containers:
       - name: perfsonar-testpoint
-        {{ if .Values.psconfigHost }}
-        command: psconfig blah
-        args: {{ .Values.psconfigHost }}
+        {{ if .Values.psconfigURL }}
+        command: ["psconfig", "remote", "add"]
+        args: {{ .Values.psconfigURL }}
         {{ end }}
         image: perfsonar/testpoint:4.2.4
         imagePullPolicy: Always
